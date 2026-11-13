@@ -2,7 +2,7 @@
 
 <img src="assets/wordmark.svg" alt="DAWAN" width="100%"/>
 
-### PEOPLE FIRST. PATHWAYS NEXT. SYSTEMS THAT LAST.
+<img src="assets/typography-motion.svg" alt="Animated typography: People. Pathways. Systems." width="100%"/>
 
 *Founder-minded builder · Technology · Education · Digital experiences*
 
@@ -10,7 +10,7 @@
 
 <img src="assets/portrait-original.jpg" alt="Ishak Dawan in a cream three-piece suit" width="360"/>
 
-<sub>ISHАK DAWAN · BANGLADESH</sub>
+<sub>ISHAK DAWAN · BANGLADESH</sub>
 
 </div>
 
@@ -19,10 +19,6 @@
 ## Ishak Dawan
 
 I work across technology, education, business and digital experiences. I enjoy turning complicated ideas into useful, human-centred systems.
-
-<div align="center">
-<img src="assets/typography-motion.svg" alt="People. Pathways. Systems." width="100%"/>
-</div>
 
 ### What I’m exploring
 
