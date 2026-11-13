@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 270" role="img" aria-label="People, Pathways, Systems">
+<rect width="1200" height="270" rx="20" fill="#10272A"/>
+<text x="52" y="105" fill="#F4F0E6" font-family="Georgia,serif" font-size="70">People.</text>
+<text x="390" y="190" fill="#C45A3C" font-family="Georgia,serif" font-size="70" font-style="italic">Pathways.</text>
+<text x="835" y="105" fill="#F4F0E6" font-family="Georgia,serif" font-size="70">Systems.</text>
+<path d="M55 226 C270 160 390 264 585 212 S925 165 1145 224" fill="none" stroke="#64735B" stroke-width="5" stroke-linecap="round"/>
+<circle cx="585" cy="212" r="9" fill="#C45A3C"/>
+</svg>
