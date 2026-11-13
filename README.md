@@ -63,6 +63,31 @@ As Founder & CEO of [Next Border](https://www.nextborder.online), I work on clea
 
 ---
 
+## Activity & collaboration
+
+<img src="assets/activity-collaboration-contact.svg" alt="Explore GitHub activity, collaborate on AI, learning, frontend and systems, or connect through GitHub and Next Border." width="100%"/>
+
+I use this profile to share projects, experiments and ideas as they evolve. GitHub keeps the live contribution graph and activity timeline on my profile.
+
+**Follow the work:** [GitHub activity & contributions](https://github.com/dawancolor-cell?tab=overview) · [Browse repositories](https://github.com/dawancolor-cell?tab=repositories)
+
+### What I’m open to exploring together
+
+- Practical AI and automation for everyday workflows
+- Education technology, accessible learning and student pathways
+- Distinctive frontend experiences, purposeful motion and digital storytelling
+- Useful product and workflow systems for teams and businesses
+
+A good collaboration starts with a clear problem, a small experiment and honest learning.
+
+### Say hello
+
+For project and technology conversations, connect through GitHub. For Next Border education and mobility enquiries, visit the website or use the consultation page.
+
+**Connect:** [GitHub](https://github.com/dawancolor-cell) · [NextBorder.online](https://www.nextborder.online) · [Book a consultation](https://www.nextborder.online/#consultation)
+
+---
+
 ### Design point of view
 
 A good digital experience should feel considered, not generated. I value expressive colour, strong typography, purposeful motion and clear information hierarchy.
