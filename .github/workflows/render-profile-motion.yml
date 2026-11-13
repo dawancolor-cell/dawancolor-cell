@@ -33,19 +33,21 @@ jobs:
           npm install --no-save playwright
           npx playwright install --with-deps chromium
 
-      - name: Install GIF encoder
+      - name: Install optimized GIF tools
         run: |
           sudo apt-get update
-          sudo apt-get install -y ffmpeg
+          sudo apt-get install -y ffmpeg gifsicle
 
       - name: Render SVG motion frames
         run: node scripts/render_profile_motion.mjs
 
-      - name: Encode optimized animated GIF
+      - name: Encode compact animated GIF
         run: |
-          ffmpeg -y -framerate 10 -i frames/frame-%03d.png \
-            -filter_complex "[0:v]fps=10,scale=960:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=96:stats_mode=diff[p];[s1][p]paletteuse=dither=bayer" \
-            -loop 0 assets/typography-motion.gif
+          ffmpeg -y -framerate 8 -i frames/frame-%03d.png \
+            -filter_complex "[0:v]fps=8,scale=864:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=64:stats_mode=diff[p];[s1][p]paletteuse=dither=bayer" \
+            -loop 0 /tmp/typography-motion-raw.gif
+          gifsicle --optimize=3 --lossy=45 /tmp/typography-motion-raw.gif \
+            -o assets/typography-motion.gif
           ls -lh assets/typography-motion.gif
 
       - name: Switch profile banner to generated GIF
@@ -68,6 +70,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "The animated banner is already up to date."
           else
-            git commit -m "Build and publish animated profile banner GIF"
+            git commit -m "Build and publish compact animated profile banner"
             git push
           fi
