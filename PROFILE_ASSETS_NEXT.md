@@ -4,12 +4,18 @@
 - `assets/wordmark.svg` — custom DAWAN wordmark.
 - `assets/portrait-original.jpg` — original portrait, unchanged.
 - `assets/typography-motion.svg` and `assets/typography-motion.gif` — kinetic typography banner.
-- `assets/work-showcase.svg` and `assets/work-showcase.gif` — animated three-card selected-work showcase.
+- `assets/work-showcase.svg` and `assets/work-showcase.gif` — animated selected-work cards.
+- `assets/nextborder-founder-motion.svg` and `assets/nextborder-founder-motion.gif` — animated founder identity panel for Next Border.
 
-## Motion details
-- Typography banner: staggered word reveals, moving light sweep, animated route stroke, orbiting connection points, subtle particles and a quiet grid/glow field.
-- Work showcase: a traveling route signal for NextBorder, animated workflow bars for NextBorder Import, and an orbiting brand mark for Dawan Trade Link.
-- Both GIFs are rendered from editable SVG source files by GitHub Actions, then optimized for profile loading.
+## Founder panel
+- Identifies Ishak Dawan as Founder & CEO of Next Border.
+- Uses the official company tagline: “Crossing Boundaries. Building Futures.”
+- Reflects the website's focus areas: study-abroad guidance, scholarships, visa-file preparation, EU work pathways and free IELTS learning.
+- Includes animated kinetic typography, a route-orbit graphic, multicolour gradient accents, pulsing destination nodes and a moving light sweep.
+- Uses Next Border's dark navy/teal brand foundation with cyan, mint, amber, coral and violet accents.
 
-## Platform note
-GitHub Profile README supports formatted text, images and GIFs, but does not allow custom JavaScript, WebGL or arbitrary page-level CSS in the profile itself. The motion graphics are therefore self-contained visual assets rather than interactive website components.
+## Rendering
+The SVG files are the editable motion sources. GitHub Actions renders optimized GIFs at 8 fps for README compatibility and mobile loading. GitHub Profile README does not permit arbitrary page-level CSS, JavaScript or WebGL, so motion is delivered as self-contained image assets.
+
+## Platform boundary
+The native GitHub contribution graph, activity overview, and activity timeline are rendered by GitHub and cannot be directly restyled from a profile README. Custom visual sections are displayed inside the README area, above those native profile sections.
