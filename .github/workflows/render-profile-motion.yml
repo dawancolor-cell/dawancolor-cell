@@ -1,6 +1,14 @@
 name: Render DAWAN profile motion
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "assets/typography-motion.svg"
+      - "assets/work-showcase.svg"
+      - "assets/nextborder-founder-motion.svg"
+      - "scripts/render_profile_motion.mjs"
+      - ".github/workflows/render-profile-motion.yml"
   workflow_dispatch:
 
 permissions:
@@ -49,7 +57,13 @@ jobs:
           gifsicle --optimize=3 --lossy=45 /tmp/work-showcase-raw.gif \
             -o assets/work-showcase.gif
 
-          ls -lh assets/typography-motion.gif assets/work-showcase.gif
+          ffmpeg -y -framerate 8 -i founder-frames/frame-%03d.png \
+            -filter_complex "[0:v]fps=8,scale=864:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=96:stats_mode=diff[p];[s1][p]paletteuse=dither=bayer" \
+            -loop 0 /tmp/nextborder-founder-raw.gif
+          gifsicle --optimize=3 --lossy=55 /tmp/nextborder-founder-raw.gif \
+            -o assets/nextborder-founder-motion.gif
+
+          ls -lh assets/typography-motion.gif assets/work-showcase.gif assets/nextborder-founder-motion.gif
 
       - name: Switch profile images to generated GIFs
         run: |
@@ -67,6 +81,10 @@ jobs:
               (
                   '<img src="assets/work-showcase.svg" alt="Three selected work areas: NextBorder, NextBorder Import and Dawan Trade Link" width="100%"/>',
                   '<img src="assets/work-showcase.gif" alt="Three selected work areas: NextBorder, NextBorder Import and Dawan Trade Link" width="100%"/>'
+              ),
+              (
+                  '<img src="assets/nextborder-founder-motion.svg" alt="Ishak Dawan, Founder and CEO of Next Border. Crossing Boundaries. Building Futures." width="100%"/>',
+                  '<img src="assets/nextborder-founder-motion.gif" alt="Ishak Dawan, Founder and CEO of Next Border. Crossing Boundaries. Building Futures." width="100%"/>'
               )
           ]
 
@@ -80,7 +98,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/typography-motion.gif assets/work-showcase.gif README.md
+          git add assets/typography-motion.gif assets/work-showcase.gif assets/nextborder-founder-motion.gif README.md
           if git diff --cached --quiet; then
             echo "The animated profile assets are already up to date."
           else
