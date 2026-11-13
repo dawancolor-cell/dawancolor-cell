@@ -17,8 +17,12 @@ The visual language prioritizes editorial typography, generous negative space, p
 - `assets/wordmark.svg` — DAWAN master wordmark.
 - `assets/portrait-original.jpg` — original founder portrait; preserved unchanged.
 - `assets/typography-motion.svg` and `assets/typography-motion.gif` — DAWAN kinetic typography banner.
-- `assets/work-showcase.svg` and `assets/work-showcase.gif` — selected-work visual.
+- `assets/work-showcase.svg` and `assets/work-showcase.gif` — selected ventures: NextBorder, NextBorder Import and Dawan Trade Link.
 - `assets/nextborder-founder-motion.svg` and `assets/nextborder-founder-motion.gif` — Next Border founder identity panel.
+
+## Selected ventures content rules
+
+Only projects and business initiatives supported by verified repository or website information are presented. NextBorder and NextBorder Import link to their existing public repositories; Dawan Trade Link is identified as a business initiative without inventing a public repository URL.
 
 ## Brand relationship
 
@@ -26,7 +30,7 @@ DAWAN is the master personal identity. The Next Border founder panel remains a d
 
 ## Rendering
 
-SVG files are the editable motion sources. GitHub Actions renders the DAWAN typography and Next Border founder panels as optimized GIFs at 8 fps for README compatibility. The renderer uses a pinned Playwright version and publishes generated assets to the branch that triggered the workflow.
+SVG files are the editable motion sources. GitHub Actions renders the DAWAN typography, selected ventures and Next Border founder panels as optimized GIFs at 8 fps for README compatibility. The renderer uses a pinned Playwright version and publishes generated assets to the branch that triggered the workflow.
 
 ## GitHub platform boundary
 

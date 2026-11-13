@@ -1,37 +1,114 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 540" role="img" aria-labelledby="title desc">
-<title id="title">DAWAN selected work</title>
-<desc id="desc">Three editorial project cards for education access, operations systems and business brand building, connected by mobile-optimized animated route lines and geometric signals.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 530" role="img" aria-labelledby="title desc">
+<title id="title">DAWAN — Selected ventures</title>
+<desc id="desc">Three restrained editorial cards for NextBorder, NextBorder Import and Dawan Trade Link, using midnight navy, petrol teal, warm ivory and champagne gold with subtle motion lines and original abstract vector illustrations.</desc>
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#10272A"/><stop offset=".6" stop-color="#19383A"/><stop offset="1" stop-color="#10272A"/></linearGradient>
-  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#C45A3C"/><stop offset=".5" stop-color="#D8C6A5"/><stop offset="1" stop-color="#81927A"/></linearGradient>
-  <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C45A3C" stop-opacity=".22"/><stop offset="1" stop-color="#C45A3C" stop-opacity="0"/></linearGradient>
-  <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#F4F0E6" opacity=".15"/></pattern>
-  <filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="20"/></filter>
+  <linearGradient id="canvas" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#07121C"/>
+    <stop offset=".58" stop-color="#0A2029"/>
+    <stop offset="1" stop-color="#082F34"/>
+  </linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#E8D9B4"/>
+    <stop offset=".52" stop-color="#D8C69A"/>
+    <stop offset="1" stop-color="#B79A65"/>
+  </linearGradient>
+  <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#13C5C2"/>
+    <stop offset="1" stop-color="#0B6C70"/>
+  </linearGradient>
+  <radialGradient id="glow">
+    <stop offset="0" stop-color="#13C5C2" stop-opacity=".17"/>
+    <stop offset="1" stop-color="#13C5C2" stop-opacity="0"/>
+  </radialGradient>
+  <pattern id="grain" width="32" height="32" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1" fill="#D9E6E2" opacity=".12"/>
+  </pattern>
+  <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="22"/>
+  </filter>
 </defs>
-<rect width="1440" height="540" rx="24" fill="url(#bg)"/><rect width="1440" height="540" rx="24" fill="url(#dots)" opacity=".42"/>
-<ellipse cx="1130" cy="85" rx="250" ry="150" fill="url(#glow)" filter="url(#soft)"><animate attributeName="cx" values="1080;1190;1080" dur="12s" repeatCount="indefinite"/><animate attributeName="opacity" values=".55;.95;.55" dur="7s" repeatCount="indefinite"/></ellipse>
-<g fill="#D8C6A5" font-family="Arial, sans-serif" font-size="15" letter-spacing="3"><text x="62" y="60">DAWAN  /  SELECTED WORK</text><text x="1378" y="60" text-anchor="end">FIELD NOTES  ·  2026</text></g>
-<text x="62" y="126" fill="#F4F0E6" font-family="Georgia, 'Times New Roman', serif" font-size="54" letter-spacing="-1.5">A few things taking shape.</text>
-<text x="1378" y="118" text-anchor="end" fill="#AFC0B4" font-family="Arial, sans-serif" font-size="15" letter-spacing="2">EDUCATION  /  OPERATIONS  /  BRAND</text>
-<path d="M62 148H1378" stroke="#F4F0E6" stroke-opacity=".2"/><path d="M62 148H370" stroke="url(#accent)" stroke-width="3" stroke-linecap="round" stroke-dasharray="90 250"><animate attributeName="stroke-dashoffset" values="340;0" dur="6s" repeatCount="indefinite"/></path>
-<g><rect x="48" y="178" width="430" height="294" rx="18" fill="#173437" stroke="#55706B" stroke-opacity=".65"/><rect x="48" y="178" width="430" height="4" rx="2" fill="#C45A3C"/>
-<g font-family="Arial, sans-serif" fill="#D8C6A5" font-size="13" letter-spacing="2.2"><text x="78" y="220">01  /  EDUCATION</text><text x="446" y="220" text-anchor="end" fill="#81927A">STUDENT PATHWAYS</text></g>
-<text x="78" y="276" fill="#F4F0E6" font-family="Georgia, serif" font-size="40">NextBorder</text><text x="78" y="310" fill="#B8C7BD" font-family="Arial, sans-serif" font-size="17">Making international study journeys</text><text x="78" y="334" fill="#B8C7BD" font-family="Arial, sans-serif" font-size="17">clearer, more human and accessible.</text>
-<path d="M80 398 C145 362 196 437 258 396 S370 366 438 399" fill="none" stroke="#81927A" stroke-width="2" stroke-opacity=".6"/><path d="M80 398 C145 362 196 437 258 396 S370 366 438 399" fill="none" stroke="#D8C6A5" stroke-width="3" stroke-linecap="round" stroke-dasharray="28 520"><animate attributeName="stroke-dashoffset" values="548;0" dur="5.5s" repeatCount="indefinite"/></path>
-<g fill="#C45A3C"><circle cx="80" cy="398" r="5"/><circle cx="258" cy="396" r="5"><animate attributeName="r" values="4;7;4" dur="2.4s" repeatCount="indefinite"/></circle></g><circle cx="438" cy="399" r="5" fill="#D8C6A5"/><text x="78" y="444" fill="#D8C6A5" font-family="Arial, sans-serif" font-size="12" letter-spacing="2">PEOPLE FIRST  ·  PRACTICAL SYSTEMS</text></g>
-<g><rect x="505" y="178" width="430" height="294" rx="18" fill="#173437" stroke="#55706B" stroke-opacity=".65"/><rect x="505" y="178" width="430" height="4" rx="2" fill="#81927A"/>
-<g font-family="Arial, sans-serif" fill="#D8C6A5" font-size="13" letter-spacing="2.2"><text x="535" y="220">02  /  OPERATIONS</text><text x="903" y="220" text-anchor="end" fill="#81927A">DIGITAL WORKFLOWS</text></g>
-<text x="535" y="276" fill="#F4F0E6" font-family="Georgia, serif" font-size="36">NextBorder Import</text><text x="535" y="310" fill="#B8C7BD" font-family="Arial, sans-serif" font-size="17">Turning import operations into</text><text x="535" y="334" fill="#B8C7BD" font-family="Arial, sans-serif" font-size="17">clearer dashboards and workflows.</text>
-<g transform="translate(540 372)"><path d="M0 58H350" stroke="#F4F0E6" stroke-opacity=".18"/>
-<rect x="8" y="31" width="34" height="27" rx="5" fill="#647A69"><animate attributeName="height" values="27;36;27" dur="4s" repeatCount="indefinite"/><animate attributeName="y" values="31;22;31" dur="4s" repeatCount="indefinite"/></rect>
-<rect x="64" y="12" width="34" height="46" rx="5" fill="#C45A3C"><animate attributeName="height" values="46;54;46" dur="4s" begin=".4s" repeatCount="indefinite"/><animate attributeName="y" values="12;4;12" dur="4s" begin=".4s" repeatCount="indefinite"/></rect>
-<rect x="120" y="22" width="34" height="36" rx="5" fill="#D8C6A5"><animate attributeName="height" values="36;44;36" dur="4s" begin=".8s" repeatCount="indefinite"/><animate attributeName="y" values="22;14;22" dur="4s" begin=".8s" repeatCount="indefinite"/></rect>
-<rect x="176" y="5" width="34" height="53" rx="5" fill="#647A69"><animate attributeName="height" values="53;60;53" dur="4s" begin="1.2s" repeatCount="indefinite"/><animate attributeName="y" values="5;-2;5" dur="4s" begin="1.2s" repeatCount="indefinite"/></rect>
-<rect x="232" y="27" width="34" height="31" rx="5" fill="#C45A3C"><animate attributeName="height" values="31;39;31" dur="4s" begin="1.6s" repeatCount="indefinite"/><animate attributeName="y" values="27;19;27" dur="4s" begin="1.6s" repeatCount="indefinite"/></rect>
-<path d="M8 1H340" stroke="#D8C6A5" stroke-opacity=".24" stroke-dasharray="3 8"/><circle cx="326" cy="9" r="5" fill="#D8C6A5"><animate attributeName="opacity" values=".3;1;.3" dur="2s" repeatCount="indefinite"/></circle></g><text x="535" y="444" fill="#D8C6A5" font-family="Arial, sans-serif" font-size="12" letter-spacing="2">STRUCTURE  ·  CLARITY  ·  FLOW</text></g>
-<g><rect x="962" y="178" width="430" height="294" rx="18" fill="#173437" stroke="#55706B" stroke-opacity=".65"/><rect x="962" y="178" width="430" height="4" rx="2" fill="#D8C6A5"/>
-<g font-family="Arial, sans-serif" fill="#D8C6A5" font-size="13" letter-spacing="2.2"><text x="992" y="220">03  /  BUSINESS</text><text x="1360" y="220" text-anchor="end" fill="#81927A">BRAND BUILDING</text></g>
-<text x="992" y="276" fill="#F4F0E6" font-family="Georgia, serif" font-size="38">Dawan Trade Link</text><text x="992" y="310" fill="#B8C7BD" font-family="Arial, sans-serif" font-size="17">Exploring business initiatives and</text><text x="992" y="334" fill="#B8C7BD" font-family="Arial, sans-serif" font-size="17">distinctive brand experiences.</text>
-<g transform="translate(1178 408)"><circle r="43" fill="none" stroke="#D8C6A5" stroke-opacity=".32" stroke-width="1.5" stroke-dasharray="4 7"/><circle r="29" fill="none" stroke="#C45A3C" stroke-opacity=".8" stroke-width="2"/><g><circle cx="43" cy="0" r="6" fill="#C45A3C"/><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/></g><g><circle cx="-29" cy="0" r="4" fill="#D8C6A5"/><animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="11s" repeatCount="indefinite"/></g><circle r="5" fill="#81927A"><animate attributeName="r" values="4;7;4" dur="2.6s" repeatCount="indefinite"/></circle></g><text x="992" y="444" fill="#D8C6A5" font-family="Arial, sans-serif" font-size="12" letter-spacing="2">IDENTITY  ·  TRUST  ·  EXPERIENCE</text></g>
-<g fill="#AFC0B4" font-family="Arial, sans-serif" font-size="12" letter-spacing="2"><text x="62" y="510">IDEAS INTO USEFUL SYSTEMS</text><text x="1378" y="510" text-anchor="end">THOUGHTFUL BY DESIGN</text></g><path d="M62 522H1378" stroke="#F4F0E6" stroke-opacity=".16"/>
+
+<rect width="1440" height="530" rx="22" fill="url(#canvas)"/>
+<rect width="1440" height="530" rx="22" fill="url(#grain)" opacity=".4"/>
+<ellipse cx="1160" cy="80" rx="330" ry="210" fill="url(#glow)" filter="url(#blur)">
+  <animate attributeName="cx" values="1080;1220;1080" dur="18s" repeatCount="indefinite"/>
+</ellipse>
+
+<g font-family="Arial, Helvetica, sans-serif">
+  <text x="64" y="62" fill="#D8C69A" font-size="13" letter-spacing="4">DAWAN  /  SELECTED VENTURES</text>
+  <text x="1376" y="62" fill="#94A3B8" text-anchor="end" font-size="12" letter-spacing="3">EDUCATION  ·  OPERATIONS  ·  BUSINESS</text>
+</g>
+<text x="64" y="128" fill="#F5F3EA" font-family="Georgia, 'Times New Roman', serif" font-size="54" letter-spacing="-1.5">Work shaped around people and systems.</text>
+<text x="66" y="163" fill="#AEBCC2" font-family="Arial, Helvetica, sans-serif" font-size="17">A small selection of business and digital work in progress.</text>
+<path d="M64 188H1376" stroke="#E8E6DD" stroke-opacity=".2"/>
+<path d="M64 188H330" stroke="url(#gold)" stroke-width="2.5" stroke-linecap="round">
+  <animate attributeName="x2" values="220;440;220" dur="12s" repeatCount="indefinite"/>
+</path>
+
+<!-- Card 01: NextBorder -->
+<g>
+  <rect x="54" y="218" width="424" height="250" rx="15" fill="#0B202A" stroke="#1E5960" stroke-width="1.2"/>
+  <rect x="54" y="218" width="424" height="3" rx="1.5" fill="url(#teal)"/>
+  <text x="82" y="256" fill="#13C5C2" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2.5">01  /  EDUCATION &amp; MOBILITY</text>
+  <text x="82" y="305" fill="#F5F3EA" font-family="Georgia, 'Times New Roman', serif" font-size="39">NextBorder</text>
+  <text x="82" y="340" fill="#C5D0D2" font-family="Arial, Helvetica, sans-serif" font-size="16">Student pathways, admissions guidance</text>
+  <text x="82" y="364" fill="#C5D0D2" font-family="Arial, Helvetica, sans-serif" font-size="16">and international mobility support.</text>
+  <g transform="translate(355 338)">
+    <circle r="61" fill="none" stroke="#D8C69A" stroke-opacity=".35" stroke-width="1.2"/>
+    <circle r="46" fill="none" stroke="#13C5C2" stroke-opacity=".75" stroke-width="1.5" stroke-dasharray="2 7"/>
+    <path d="M-43 14C-20 -18 6 -23 41 -4" fill="none" stroke="url(#gold)" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M28 -12L42 -4L30 5" fill="none" stroke="#D8C69A" stroke-width="2"/>
+    <circle cx="-43" cy="14" r="4.5" fill="#13C5C2"/>
+    <circle cx="41" cy="-4" r="4.5" fill="#D8C69A"><animate attributeName="r" values="3.5;6;3.5" dur="2.8s" repeatCount="indefinite"/></circle>
+    <rect x="-22" y="-18" width="44" height="36" rx="4" fill="#0D333A" stroke="#13C5C2" stroke-opacity=".8"/>
+    <path d="M-12 -7H12M-12 1H8M-12 9H4" stroke="#D8C69A" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <text x="82" y="430" fill="#D8C69A" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="1.6">STUDY ABROAD  ·  VISA GUIDANCE  ·  IELTS</text>
+</g>
+
+<!-- Card 02: NextBorder Import -->
+<g>
+  <rect x="508" y="218" width="424" height="250" rx="15" fill="#0B202A" stroke="#35605B" stroke-width="1.2"/>
+  <rect x="508" y="218" width="424" height="3" rx="1.5" fill="url(#gold)"/>
+  <text x="536" y="256" fill="#D8C69A" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2.5">02  /  OPERATIONS</text>
+  <text x="536" y="305" fill="#F5F3EA" font-family="Georgia, 'Times New Roman', serif" font-size="34">NextBorder Import</text>
+  <text x="536" y="340" fill="#C5D0D2" font-family="Arial, Helvetica, sans-serif" font-size="16">Import operations dashboard and</text>
+  <text x="536" y="364" fill="#C5D0D2" font-family="Arial, Helvetica, sans-serif" font-size="16">digital workflow exploration.</text>
+  <g transform="translate(827 344)">
+    <rect x="-60" y="-48" width="120" height="96" rx="8" fill="#0D3036" stroke="#4D7770" stroke-opacity=".8"/>
+    <path d="M-43 -29H43M-43 -13H43" stroke="#D8C69A" stroke-opacity=".7" stroke-width="1.5"/>
+    <g fill="#13C5C2">
+      <rect x="-43" y="4" width="16" height="28" rx="3"><animate attributeName="height" values="28;37;28" dur="4s" repeatCount="indefinite"/><animate attributeName="y" values="4;-5;4" dur="4s" repeatCount="indefinite"/></rect>
+      <rect x="-13" y="-1" width="16" height="33" rx="3"><animate attributeName="height" values="33;43;33" dur="4s" begin=".45s" repeatCount="indefinite"/><animate attributeName="y" values="-1;-11;-1" dur="4s" begin=".45s" repeatCount="indefinite"/></rect>
+      <rect x="17" y="10" width="16" height="22" rx="3"><animate attributeName="height" values="22;31;22" dur="4s" begin=".9s" repeatCount="indefinite"/><animate attributeName="y" values="10;1;10" dur="4s" begin=".9s" repeatCount="indefinite"/></rect>
+    </g>
+    <circle cx="43" cy="-29" r="4" fill="#D8C69A"><animate attributeName="opacity" values=".3;1;.3" dur="2.2s" repeatCount="indefinite"/></circle>
+  </g>
+  <text x="536" y="430" fill="#D8C69A" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="1.6">STRUCTURE  ·  CLARITY  ·  WORKFLOWS</text>
+</g>
+
+<!-- Card 03: Dawan Trade Link -->
+<g>
+  <rect x="962" y="218" width="424" height="250" rx="15" fill="#0B202A" stroke="#64573F" stroke-width="1.2"/>
+  <rect x="962" y="218" width="424" height="3" rx="1.5" fill="#D8C69A"/>
+  <text x="990" y="256" fill="#D8C69A" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2.5">03  /  BUSINESS &amp; BRAND</text>
+  <text x="990" y="305" fill="#F5F3EA" font-family="Georgia, 'Times New Roman', serif" font-size="37">Dawan Trade Link</text>
+  <text x="990" y="340" fill="#C5D0D2" font-family="Arial, Helvetica, sans-serif" font-size="16">Business initiatives and distinct</text>
+  <text x="990" y="364" fill="#C5D0D2" font-family="Arial, Helvetica, sans-serif" font-size="16">brand-building directions.</text>
+  <g transform="translate(1284 345)">
+    <circle r="57" fill="none" stroke="#D8C69A" stroke-opacity=".35" stroke-width="1.2"/>
+    <circle r="42" fill="none" stroke="#D8C69A" stroke-opacity=".85" stroke-width="1.5"/>
+    <circle r="28" fill="#102832" stroke="#13C5C2" stroke-opacity=".8"/>
+    <text x="0" y="12" text-anchor="middle" fill="#D8C69A" font-family="Georgia, 'Times New Roman', serif" font-size="36">D</text>
+    <g>
+      <circle cx="57" cy="0" r="5" fill="#13C5C2"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="22s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <text x="990" y="430" fill="#D8C69A" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="1.6">IDENTITY  ·  TRUST  ·  EXPERIENCE</text>
+</g>
+
+<path d="M64 493H1376" stroke="#E8E6DD" stroke-opacity=".16"/>
+<text x="64" y="516" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2">SELECTED WORK  /  A CONTINUING PRACTICE</text>
+<text x="1376" y="516" fill="#D8C69A" font-family="Arial, Helvetica, sans-serif" font-size="11" text-anchor="end" letter-spacing="2">PEOPLE  ·  PATHWAYS  ·  SYSTEMS</text>
 </svg>
