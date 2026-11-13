@@ -10,28 +10,32 @@ const svg = fs.readFileSync(svgPath, "utf8");
 fs.rmSync(frameDir, { recursive: true, force: true });
 fs.mkdirSync(frameDir, { recursive: true });
 
+const width = 864;
+const height = 240;
 const html = `<!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head>
-<body style="margin:0;width:1440px;height:400px;overflow:hidden;background:#10272A">
-  <div style="width:1440px;height:400px">${svg.replace("<svg ", '<svg width="1440" height="400" ')}</div>
+<head><meta charset="utf-8"><meta name="viewport" content="width=${width}, initial-scale=1"></head>
+<body style="margin:0;width:${width}px;height:${height}px;overflow:hidden;background:#10272A">
+  <div style="width:${width}px;height:${height}px">${svg.replace("<svg ", `<svg width="${width}" height="${height}" `)}</div>
 </body>
 </html>`;
 
 const browser = await chromium.launch({ headless: true });
 try {
   const page = await browser.newPage({
-    viewport: { width: 1440, height: 400 },
+    viewport: { width, height },
     deviceScaleFactor: 1
   });
   await page.setContent(html, { waitUntil: "load" });
   await page.waitForTimeout(250);
+
+  // Capture an entire 8-second motion cycle at 8 fps.
   for (let i = 0; i < 64; i += 1) {
     const name = `frame-${String(i).padStart(3, "0")}.png`;
     await page.screenshot({ path: path.join(frameDir, name) });
-    await page.waitForTimeout(100);
+    await page.waitForTimeout(125);
   }
-  console.log("Rendered 64 animation frames.");
+  console.log("Rendered 64 optimized-size animation frames.");
 } finally {
   await browser.close();
 }
