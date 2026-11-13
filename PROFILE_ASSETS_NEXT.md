@@ -17,11 +17,17 @@ The visual language prioritizes editorial typography, generous negative space, p
 - `assets/wordmark.svg` — DAWAN master wordmark.
 - `assets/portrait-original.jpg` — original founder portrait; preserved unchanged.
 - `assets/typography-motion.svg` and `assets/typography-motion.gif` — DAWAN kinetic typography banner.
-- `assets/work-showcase.svg` and `assets/work-showcase.gif` — selected ventures: NextBorder, NextBorder Import and Dawan Trade Link.
-- `assets/technology-universe.svg` — static editorial map of technology interests and tools.
+- `assets/work-showcase.svg` and `assets/work-showcase.gif` — selected ventures: Next Border, NextBorder Import and Dawan Trade Link.
+- `assets/technology-universe.svg` — editorial map of technology interests and tools.
 - `assets/founder-journey.svg` — undated founder journey based on known professional chapters.
-- `assets/activity-collaboration-contact.svg` — static editorial panel introducing GitHub activity, collaboration themes and contact paths.
+- `assets/activity-collaboration-contact.svg` — editorial panel introducing GitHub activity, collaboration themes and contact paths.
 - `assets/nextborder-founder-motion.svg` and `assets/nextborder-founder-motion.gif` — Next Border founder identity panel.
+
+## Mobile readability
+
+GitHub Profile READMEs do not provide a reliable custom responsive layout for embedded SVG artwork. The graphics are therefore treated as visual storytelling panels, not the only place where essential information appears.
+
+The README repeats key information as ordinary Markdown text around the graphics. This keeps the founder's focus areas, project descriptions, technology interests and journey readable on narrow screens and accessible when images do not load. Project links use short stacked bullets instead of a wide comparison table.
 
 ## Content accuracy
 
@@ -29,17 +35,17 @@ Technology labels describe areas of exploration, not verified proficiency levels
 
 The founder journey is deliberately undated. It presents broad professional chapters without assigning unverified years or overstating credentials.
 
-Selected venture links are limited to known public destinations. Dawan Trade Link is identified as a business initiative without inventing a public repository URL.
+Selected venture links are limited to known public destinations. Next Border and NextBorder Import link to their verified public repositories; Dawan Trade Link is identified as a business initiative without inventing a public repository URL.
 
 The Activity section points to GitHub's native profile overview and repository views. It does not recreate contribution totals, fabricate activity data or imply that decorative artwork is a live data visualization.
 
 Collaboration themes are framed as areas of interest, not claims of professional mastery or guaranteed service delivery.
 
-Contact paths are limited to verified public destinations: the GitHub profile, NextBorder website and its published consultation page. No personal or business email address is added without confirmation that it is intended for public display.
+Contact paths are limited to verified public destinations: the GitHub profile, Next Border website and its published consultation page. No personal or business email address is added without confirmation that it is intended for public display.
 
 ## Brand relationship
 
-DAWAN is the master personal identity. The Next Border founder panel remains a distinct company sub-brand asset and may retain its own company-specific motion accents. This prevents the personal and business identities from becoming visually indistinguishable.
+DAWAN is the master personal identity. Next Border remains a distinct company sub-brand and retains its own company-specific motion accents. Public-facing copy uses the company name consistently as “Next Border”; the domain remains `nextborder.online`.
 
 ## Rendering
 
