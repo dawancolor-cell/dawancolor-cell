@@ -16,6 +16,12 @@ const assets = [
     frameDir: "work-frames",
     width: 864,
     height: 324
+  },
+  {
+    source: "assets/nextborder-founder-motion.svg",
+    frameDir: "founder-frames",
+    width: 864,
+    height: 408
   }
 ];
 
