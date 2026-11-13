@@ -60,7 +60,7 @@ I work across technology, education, business and digital experiences. I enjoy t
 
 ### Founder & CEO · Next Border
 
-<img src="assets/nextborder-founder-motion.svg" alt="Ishak Dawan, Founder and CEO of Next Border. Crossing Boundaries. Building Futures." width="100%"/>
+<img src="assets/nextborder-founder-motion.gif" alt="Ishak Dawan, Founder and CEO of Next Border. Crossing Boundaries. Building Futures." width="100%"/>
 
 As Founder & CEO of [Next Border](https://www.nextborder.online), I work on clearer international education and mobility pathways — from study-abroad admissions guidance and scholarship options to visa-file preparation, EU work pathways and free IELTS learning.
 
