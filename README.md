@@ -4,7 +4,7 @@
 
 <img src="assets/typography-motion.gif" alt="Animated typography: People. Pathways. Systems." width="100%"/>
 
-*Founder-minded builder · Technology · Education · Digital experiences*
+*Founder & CEO, Next Border · Education access · Global mobility · Digital systems*
 
 <br/>
 
@@ -57,6 +57,16 @@ I work across technology, education, business and digital experiences. I enjoy t
     </tr>
   </tbody>
 </table>
+
+### Founder & CEO · Next Border
+
+<img src="assets/nextborder-founder-motion.svg" alt="Ishak Dawan, Founder and CEO of Next Border. Crossing Boundaries. Building Futures." width="100%"/>
+
+As Founder & CEO of [Next Border](https://www.nextborder.online), I work on clearer international education and mobility pathways — from study-abroad admissions guidance and scholarship options to visa-file preparation, EU work pathways and free IELTS learning.
+
+**Explore:** [NextBorder.online](https://www.nextborder.online) · [Free IELTS practice](https://www.nextborder.online/ielts-speaking-mock) · [Book a consultation](https://www.nextborder.online/#consultation)
+
+---
 
 ### Design point of view
 
