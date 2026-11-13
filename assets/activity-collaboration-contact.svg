@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 500" role="img" aria-labelledby="title desc">
+<title id="title">DAWAN activity, collaboration and contact</title>
+<desc id="desc">Three editorial panels invite visitors to explore live GitHub activity, collaborate around practical AI, education technology, frontend and useful systems, or connect through GitHub and Next Border.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07121C"/><stop offset=".58" stop-color="#0A2029"/><stop offset="1" stop-color="#082F34"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#13C5C2"/><stop offset="1" stop-color="#D8C69A"/></linearGradient>
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#E8E6DD" stroke-opacity=".035"/></pattern>
+  <radialGradient id="halo"><stop offset="0" stop-color="#13C5C2" stop-opacity=".15"/><stop offset="1" stop-color="#13C5C2" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1440" height="500" rx="22" fill="url(#bg)"/>
+<rect width="1440" height="500" rx="22" fill="url(#grid)"/>
+<ellipse cx="720" cy="255" rx="600" ry="270" fill="url(#halo)"/>
+<text x="64" y="58" fill="#D8C69A" font-family="Arial,sans-serif" font-size="13" letter-spacing="4">DAWAN  /  BEYOND THE PROFILE</text>
+<text x="1376" y="58" fill="#94A3B8" text-anchor="end" font-family="Arial,sans-serif" font-size="12" letter-spacing="3">ACTIVITY · IDEAS · CONNECTION</text>
+<text x="64" y="122" fill="#F5F3EA" font-family="Georgia,serif" font-size="48">Good work grows through exchange.</text>
+<text x="66" y="158" fill="#AEBCC2" font-family="Arial,sans-serif" font-size="17">Follow the work, bring a problem, or start a conversation.</text>
+<g>
+  <rect x="64" y="202" width="410" height="218" rx="14" fill="#0B202A" stroke="#1E5960"/>
+  <path d="M64 216Q64 202 78 202H460" stroke="#13C5C2" stroke-width="3" fill="none"/>
+  <circle cx="112" cy="260" r="22" fill="#0E3339" stroke="#13C5C2" stroke-opacity=".7"/>
+  <path d="M104 260h16M112 252v16M105 253l14 14" stroke="#13C5C2" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="150" y="256" fill="#13C5C2" font-family="Arial,sans-serif" font-size="11" letter-spacing="2">01  /  FOLLOW THE WORK</text>
+  <text x="94" y="316" fill="#F5F3EA" font-family="Georgia,serif" font-size="30">GitHub activity</text>
+  <text x="94" y="350" fill="#AEBCC2" font-family="Arial,sans-serif" font-size="15">Projects · Repositories · Progress</text>
+  <text x="94" y="391" fill="#D8C69A" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">LIVE ON GITHUB  ↗</text>
+</g>
+<g>
+  <rect x="515" y="202" width="410" height="218" rx="14" fill="#0B202A" stroke="#64573F"/>
+  <path d="M515 216Q515 202 529 202H911" stroke="#D8C69A" stroke-width="3" fill="none"/>
+  <circle cx="563" cy="260" r="22" fill="#302B23" stroke="#D8C69A" stroke-opacity=".7"/>
+  <path d="M553 261h20M563 251v20M556 254l14 14" stroke="#D8C69A" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="601" y="256" fill="#D8C69A" font-family="Arial,sans-serif" font-size="11" letter-spacing="2">02  /  BUILD TOGETHER</text>
+  <text x="545" y="316" fill="#F5F3EA" font-family="Georgia,serif" font-size="30">Open collaboration</text>
+  <text x="545" y="350" fill="#AEBCC2" font-family="Arial,sans-serif" font-size="15">AI · Learning · Frontend · Systems</text>
+  <text x="545" y="391" fill="#D8C69A" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">IDEAS INTO USEFUL THINGS</text>
+</g>
+<g>
+  <rect x="966" y="202" width="410" height="218" rx="14" fill="#0B202A" stroke="#1E5960"/>
+  <path d="M966 216Q966 202 980 202H1362" stroke="url(#accent)" stroke-width="3" fill="none"/>
+  <circle cx="1014" cy="260" r="22" fill="#0E3339" stroke="#13C5C2" stroke-opacity=".7"/>
+  <path d="M1005 253h18v14h-18zM1005 255l9 7 9-7" stroke="#13C5C2" stroke-width="1.4" fill="none" stroke-linejoin="round"/>
+  <text x="1052" y="256" fill="#13C5C2" font-family="Arial,sans-serif" font-size="11" letter-spacing="2">03  /  SAY HELLO</text>
+  <text x="996" y="316" fill="#F5F3EA" font-family="Georgia,serif" font-size="30">Start a conversation</text>
+  <text x="996" y="350" fill="#AEBCC2" font-family="Arial,sans-serif" font-size="15">GitHub · Next Border</text>
+  <text x="996" y="391" fill="#D8C69A" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">A CLEAR NEXT STEP</text>
+</g>
+<path d="M64 454H1376" stroke="#E8E6DD" stroke-opacity=".16"/>
+<text x="64" y="477" fill="#94A3B8" font-family="Arial,sans-serif" font-size="11" letter-spacing="2">NO INVENTED COUNTS. NO SKILL SCORES. JUST THE WORK AND THE PEOPLE BEHIND IT.</text>
+</svg>

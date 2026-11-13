@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 620" role="img" aria-labelledby="title desc">
+<title id="title">DAWAN technology universe</title>
+<desc id="desc">An editorial map of technology interests: AI and automation, frontend and interaction, cloud and infrastructure, education technology, and product and brand systems. Tools are shown as areas of exploration, not proficiency ratings.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07121C"/><stop offset=".58" stop-color="#0A2029"/><stop offset="1" stop-color="#082F34"/></linearGradient>
+ <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E8D9B4"/><stop offset=".5" stop-color="#D8C69A"/><stop offset="1" stop-color="#B79A65"/></linearGradient>
+ <radialGradient id="glow"><stop offset="0" stop-color="#13C5C2" stop-opacity=".18"/><stop offset="1" stop-color="#13C5C2" stop-opacity="0"/></radialGradient>
+ <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#E8E6DD" stroke-opacity=".035"/></pattern>
+</defs>
+<rect width="1440" height="620" rx="22" fill="url(#bg)"/><rect width="1440" height="620" rx="22" fill="url(#grid)"/>
+<ellipse cx="720" cy="310" rx="520" ry="270" fill="url(#glow)"/>
+<text x="64" y="62" fill="#D8C69A" font-family="Arial,sans-serif" font-size="13" letter-spacing="4">DAWAN  /  TECHNOLOGY UNIVERSE</text>
+<text x="1376" y="62" fill="#94A3B8" text-anchor="end" font-family="Arial,sans-serif" font-size="12" letter-spacing="3">CURIOSITY IN PRACTICE</text>
+<text x="64" y="125" fill="#F5F3EA" font-family="Georgia,serif" font-size="50">A connected set of interests.</text>
+<text x="66" y="160" fill="#AEBCC2" font-family="Arial,sans-serif" font-size="17">Exploring tools and ideas that make digital experiences more useful.</text>
+<g fill="none" stroke="#D8C69A" stroke-opacity=".32" stroke-width="1.3">
+ <path d="M720 340L270 280"/><path d="M720 340L1170 280"/><path d="M720 340L310 490"/><path d="M720 340L1130 490"/><path d="M720 340L720 520"/>
+</g>
+<g fill="none" stroke="#13C5C2" stroke-opacity=".35" stroke-width="1.2" stroke-dasharray="3 8">
+ <ellipse cx="720" cy="340" rx="330" ry="165"/><ellipse cx="720" cy="340" rx="490" ry="235"/>
+</g>
+<g>
+ <circle cx="720" cy="340" r="82" fill="#0B2932" stroke="#D8C69A" stroke-opacity=".75" stroke-width="1.5"/>
+ <circle cx="720" cy="340" r="66" fill="none" stroke="#13C5C2" stroke-opacity=".55" stroke-dasharray="2 7"/>
+ <text x="720" y="332" fill="#F5F3EA" text-anchor="middle" font-family="Georgia,serif" font-size="31">DAWAN</text>
+ <text x="720" y="360" fill="#D8C69A" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" letter-spacing="2">IDEAS → SYSTEMS</text>
+</g>
+<g font-family="Arial,sans-serif">
+ <g transform="translate(90 220)"><rect width="360" height="118" rx="12" fill="#0B202A" stroke="#1E5960"/><path d="M0 0H360" stroke="#13C5C2" stroke-width="3"/><text x="24" y="39" fill="#13C5C2" font-size="11" letter-spacing="2">01  /  INTELLIGENCE</text><text x="24" y="72" fill="#F5F3EA" font-family="Georgia,serif" font-size="25">AI &amp; Automation</text><text x="24" y="97" fill="#AEBCC2" font-size="13">Assistants · Workflows · Applied AI</text></g>
+ <g transform="translate(990 220)"><rect width="360" height="118" rx="12" fill="#0B202A" stroke="#64573F"/><path d="M0 0H360" stroke="#D8C69A" stroke-width="3"/><text x="24" y="39" fill="#D8C69A" font-size="11" letter-spacing="2">02  /  EXPERIENCE</text><text x="24" y="72" fill="#F5F3EA" font-family="Georgia,serif" font-size="25">Frontend &amp; Motion</text><text x="24" y="97" fill="#AEBCC2" font-size="13">React · Three.js · GSAP</text></g>
+ <g transform="translate(110 430)"><rect width="400" height="118" rx="12" fill="#0B202A" stroke="#35605B"/><path d="M0 0H400" stroke="#13C5C2" stroke-width="3"/><text x="24" y="39" fill="#13C5C2" font-size="11" letter-spacing="2">03  /  FOUNDATIONS</text><text x="24" y="72" fill="#F5F3EA" font-family="Georgia,serif" font-size="25">Cloud &amp; Infrastructure</text><text x="24" y="97" fill="#AEBCC2" font-size="13">GitHub · Supabase · Vercel · Cloudflare</text></g>
+ <g transform="translate(930 430)"><rect width="400" height="118" rx="12" fill="#0B202A" stroke="#64573F"/><path d="M0 0H400" stroke="#D8C69A" stroke-width="3"/><text x="24" y="39" fill="#D8C69A" font-size="11" letter-spacing="2">04  /  HUMAN OUTCOMES</text><text x="24" y="72" fill="#F5F3EA" font-family="Georgia,serif" font-size="25">Education Technology</text><text x="24" y="97" fill="#AEBCC2" font-size="13">Learning tools · Student pathways</text></g>
+ <g transform="translate(530 500)"><rect width="380" height="90" rx="12" fill="#0B202A" stroke="#64573F"/><path d="M0 0H380" stroke="#D8C69A" stroke-width="3"/><text x="24" y="35" fill="#D8C69A" font-size="11" letter-spacing="2">05  /  BUILDING</text><text x="24" y="66" fill="#F5F3EA" font-family="Georgia,serif" font-size="24">Product &amp; Brand Systems</text></g>
+</g>
+<g fill="#13C5C2"><circle cx="270" cy="280" r="5"/><circle cx="1170" cy="280" r="5"/><circle cx="310" cy="490" r="5"/><circle cx="1130" cy="490" r="5"/></g>
+<path d="M64 592H1376" stroke="#E8E6DD" stroke-opacity=".16"/>
+</svg>
