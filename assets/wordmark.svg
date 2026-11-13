@@ -1,7 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" role="img" aria-label="DAWAN wordmark">
-<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#10272A"/><stop offset=".58" stop-color="#64735B"/><stop offset="1" stop-color="#C45A3C"/></linearGradient></defs>
-<rect width="1200" height="260" rx="22" fill="#F4F0E6"/>
-<text x="55" y="166" fill="url(#g)" font-family="Georgia,serif" font-size="166" font-weight="700" letter-spacing="-8">DAWAN</text>
-<path d="M60 202H1140" stroke="#C45A3C" stroke-width="4"/>
-<text x="62" y="239" fill="#10272A" font-family="monospace" font-size="17" letter-spacing="6">A PERSONAL FIELD NOTE / 2026</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 260" role="img" aria-labelledby="title desc">
+  <title id="title">DAWAN personal brand wordmark</title>
+  <desc id="desc">A restrained editorial wordmark in warm ivory and champagne gold on a midnight navy and deep petrol-teal field.</desc>
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07121C"/>
+      <stop offset=".62" stop-color="#0A2029"/>
+      <stop offset="1" stop-color="#082F34"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E8D9B4"/>
+      <stop offset=".52" stop-color="#D8C69A"/>
+      <stop offset="1" stop-color="#B79A65"/>
+    </linearGradient>
+    <radialGradient id="tealGlow">
+      <stop offset="0" stop-color="#13C5C2" stop-opacity=".17"/>
+      <stop offset="1" stop-color="#13C5C2" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="fineGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#B9D8D4" stroke-opacity=".035" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1440" height="260" rx="18" fill="url(#base)"/>
+  <rect width="1440" height="260" rx="18" fill="url(#fineGrid)"/>
+  <ellipse cx="1260" cy="8" rx="340" ry="220" fill="url(#tealGlow)"/>
+  <path d="M0 210 C250 170 410 260 660 208 S1080 154 1440 204" fill="none" stroke="#13C5C2" stroke-opacity=".2" stroke-width="1.2"/>
+  <path d="M0 216 C260 180 430 266 680 216 S1090 164 1440 212" fill="none" stroke="#D8C69A" stroke-opacity=".12" stroke-width="1"/>
+
+  <path d="M68 54V196" stroke="url(#gold)" stroke-width="2"/>
+  <text x="103" y="166" fill="url(#gold)" font-family="Georgia, 'Times New Roman', serif" font-size="134" font-weight="500" letter-spacing="15">DAWAN</text>
+  <text x="110" y="210" fill="#E8E6DD" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="5">FOUNDER  /  TECHNOLOGY  /  EDUCATION</text>
+
+  <path d="M1010 74V188" stroke="#D8C69A" stroke-opacity=".48" stroke-width="1"/>
+  <text x="1050" y="112" fill="#D8C69A" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="3">PERSONAL BRAND</text>
+  <text x="1050" y="145" fill="#F5F3EA" font-family="Georgia, 'Times New Roman', serif" font-size="25">Ideas into useful systems.</text>
+  <text x="1050" y="180" fill="#94A3B8" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="2">BANGLADESH  ·  GLOBAL PERSPECTIVE</text>
+
+  <circle cx="1370" cy="52" r="3" fill="#13C5C2"/>
+  <circle cx="1370" cy="52" r="9" fill="none" stroke="#13C5C2" stroke-opacity=".28"/>
 </svg>

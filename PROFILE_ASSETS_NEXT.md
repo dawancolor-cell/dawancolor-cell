@@ -1,21 +1,35 @@
 # DAWAN profile assets
 
-## Published assets
-- `assets/wordmark.svg` — custom DAWAN wordmark.
-- `assets/portrait-original.jpg` — original portrait, unchanged.
-- `assets/typography-motion.svg` and `assets/typography-motion.gif` — kinetic typography banner.
-- `assets/work-showcase.svg` and `assets/work-showcase.gif` — animated selected-work cards.
-- `assets/nextborder-founder-motion.svg` and `assets/nextborder-founder-motion.gif` — animated founder identity panel for Next Border.
+## Visual direction
 
-## Founder panel
-- Identifies Ishak Dawan as Founder & CEO of Next Border.
-- Uses the official company tagline: “Crossing Boundaries. Building Futures.”
-- Reflects the website's focus areas: study-abroad guidance, scholarships, visa-file preparation, EU work pathways and free IELTS learning.
-- Includes animated kinetic typography, a route-orbit graphic, multicolour gradient accents, pulsing destination nodes and a moving light sweep.
-- Uses Next Border's dark navy/teal brand foundation with cyan, mint, amber, coral and violet accents.
+The DAWAN master identity uses a restrained hybrid-luxury palette:
+- Midnight Navy — `#07121C`
+- Deep Petrol Teal — `#082F34`
+- Aurora Cyan — `#13C5C2`
+- Champagne Gold — `#D8C69A`
+- Warm Ivory — `#F5F3EA`
+- Slate Grey — `#94A3B8`
+
+The visual language prioritizes editorial typography, generous negative space, precise alignment and purposeful motion. Glow, particles and gradients remain secondary details rather than the main event.
+
+## Published assets
+
+- `assets/wordmark.svg` — DAWAN master wordmark.
+- `assets/portrait-original.jpg` — original founder portrait; preserved unchanged.
+- `assets/typography-motion.svg` and `assets/typography-motion.gif` — DAWAN kinetic typography banner.
+- `assets/work-showcase.svg` and `assets/work-showcase.gif` — selected-work visual.
+- `assets/nextborder-founder-motion.svg` and `assets/nextborder-founder-motion.gif` — Next Border founder identity panel.
+
+## Brand relationship
+
+DAWAN is the master personal identity. The Next Border founder panel remains a distinct company sub-brand asset and may retain its own company-specific motion accents. This prevents the personal and business identities from becoming visually indistinguishable.
 
 ## Rendering
-The SVG files are the editable motion sources. GitHub Actions renders optimized GIFs at 8 fps for README compatibility and mobile loading. GitHub Profile README does not permit arbitrary page-level CSS, JavaScript or WebGL, so motion is delivered as self-contained image assets.
 
-## Platform boundary
-The native GitHub contribution graph, activity overview, and activity timeline are rendered by GitHub and cannot be directly restyled from a profile README. Custom visual sections are displayed inside the README area, above those native profile sections.
+SVG files are the editable motion sources. GitHub Actions renders the DAWAN typography and Next Border founder panels as optimized GIFs at 8 fps for README compatibility. The renderer uses a pinned Playwright version and publishes generated assets to the branch that triggered the workflow.
+
+## GitHub platform boundary
+
+GitHub Profile README does not provide a normal custom website runtime. Arbitrary page-level CSS, JavaScript, WebGL and scroll-controlled animation are not available. The profile uses supported Markdown, HTML fragments and self-contained image assets instead.
+
+The native GitHub contribution graph and activity timeline are controlled by GitHub and cannot be restyled by the README.

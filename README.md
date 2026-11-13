@@ -1,14 +1,14 @@
 <div align="center">
 
-<img src="assets/wordmark.svg" alt="DAWAN" width="100%"/>
+<img src="assets/wordmark.svg" alt="DAWAN — Founder, Technology, Education" width="100%"/>
 
-<img src="assets/typography-motion.gif" alt="Animated typography: People. Pathways. Systems." width="100%"/>
+<img src="assets/typography-motion.gif" alt="People. Pathways. Systems. Animated DAWAN brand statement." width="100%"/>
 
-*Founder & CEO, Next Border · Education access · Global mobility · Digital systems*
+**Founder & CEO, Next Border** · Education access · Global mobility · Digital systems
 
 <br/>
 
-<img src="assets/portrait-original.jpg" alt="Ishak Dawan in a cream three-piece suit" width="360"/>
+<img src="assets/portrait-original.jpg" alt="Ishak Dawan in a cream three-piece suit" width="320"/>
 
 <sub>ISHAK DAWAN · BANGLADESH</sub>
 

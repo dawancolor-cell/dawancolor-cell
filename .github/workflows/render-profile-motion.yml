@@ -1,13 +1,16 @@
-name: Render DAWAN founder background motion
+name: Render DAWAN profile motion
 
 concurrency:
-  group: dawan-profile-motion
+  group: dawan-profile-motion-${{ github.ref }}
   cancel-in-progress: true
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+      - "feature/**"
     paths:
+      - "assets/typography-motion.svg"
       - "assets/nextborder-founder-motion.svg"
       - "scripts/render_profile_motion.mjs"
       - ".github/workflows/render-profile-motion.yml"
@@ -17,65 +20,83 @@ permissions:
   contents: write
 
 jobs:
-  render-founder-banner:
+  render-profile-motion:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
     steps:
-      - name: Check out profile repository
-        uses: actions/checkout@v4
+      - name: Check out the triggering branch
+        uses: actions/checkout@v7
         with:
           persist-credentials: true
           fetch-depth: 0
 
-      - name: Set up Node
-        uses: actions/setup-node@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
         with:
-          node-version: 22
+          node-version: 24
+          package-manager-cache: false
 
-      - name: Install browser renderer
+      - name: Install pinned browser renderer
         run: |
           npm init -y
-          npm install --no-save playwright
+          npm install --no-save --no-audit --no-fund playwright@1.65.0
           npx playwright install --with-deps chromium
 
-      - name: Install optimized GIF tools
+      - name: Install GIF tools
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg gifsicle
 
-      - name: Render founder motion frames
+      - name: Render motion frames
         run: node scripts/render_profile_motion.mjs
 
-      - name: Encode mobile-friendly founder GIF
+      - name: Encode and optimize typography GIF
+        run: |
+          ffmpeg -y -framerate 8 -i typography-frames/frame-%03d.png \
+            -filter_complex "[0:v]fps=8,scale=864:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=64:stats_mode=diff[p];[s1][p]paletteuse=dither=bayer" \
+            -loop 0 /tmp/typography-raw.gif
+          gifsicle --optimize=3 --lossy=45 /tmp/typography-raw.gif \
+            -o assets/typography-motion.gif
+
+      - name: Encode and optimize founder GIF
         run: |
           ffmpeg -y -framerate 8 -i founder-frames/frame-%03d.png \
             -filter_complex "[0:v]fps=8,scale=720:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=64:stats_mode=diff[p];[s1][p]paletteuse=dither=bayer" \
-            -loop 0 /tmp/nextborder-founder-raw.gif
-          gifsicle --optimize=3 --lossy=70 /tmp/nextborder-founder-raw.gif \
+            -loop 0 /tmp/founder-raw.gif
+          gifsicle --optimize=3 --lossy=70 /tmp/founder-raw.gif \
             -o assets/nextborder-founder-motion.gif
-          ls -lh assets/nextborder-founder-motion.gif
+          ls -lh assets/typography-motion.gif assets/nextborder-founder-motion.gif
 
-      - name: Switch founder image to generated GIF
+      - name: Keep README on rendered assets
         run: |
           python - <<'PY'
           from pathlib import Path
+
           readme = Path("README.md")
           content = readme.read_text()
-          source = '<img src="assets/nextborder-founder-motion.svg" alt="Ishak Dawan, Founder and CEO of Next Border. Crossing Boundaries. Building Futures." width="100%"/>'
-          rendered = '<img src="assets/nextborder-founder-motion.gif" alt="Ishak Dawan, Founder and CEO of Next Border. Crossing Boundaries. Building Futures." width="100%"/>'
-          readme.write_text(content.replace(source, rendered))
+          content = content.replace(
+              'src="assets/typography-motion.svg"',
+              'src="assets/typography-motion.gif"'
+          )
+          content = content.replace(
+              'src="assets/nextborder-founder-motion.svg"',
+              'src="assets/nextborder-founder-motion.gif"'
+          )
+          readme.write_text(content)
           PY
 
-      - name: Publish optimized founder animation
+      - name: Publish generated assets to the triggering branch
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/nextborder-founder-motion.gif README.md
+          git add assets/typography-motion.gif assets/nextborder-founder-motion.gif README.md
           if git diff --cached --quiet; then
-            echo "The founder animation is already up to date."
-          else
-            git commit -m "Publish Next Border founder background animation"
-            git fetch origin main
-            git rebase origin/main
-            git push origin HEAD:main
+            echo "Generated assets are already current."
+            exit 0
           fi
+          git commit -m "Render premium DAWAN profile motion assets"
+          git fetch origin "$TARGET_BRANCH"
+          git rebase "origin/$TARGET_BRANCH"
+          git push origin "HEAD:$TARGET_BRANCH"
