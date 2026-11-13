@@ -1,19 +1,25 @@
-name: Render DAWAN profile motion
+name: Render DAWAN founder background motion
 
 concurrency:
   group: dawan-profile-motion
   cancel-in-progress: true
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "assets/nextborder-founder-motion.svg"
+      - "scripts/render_profile_motion.mjs"
+      - ".github/workflows/render-profile-motion.yml"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  render-banner:
+  render-founder-banner:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 10
     steps:
       - name: Check out profile repository
         uses: actions/checkout@v4
@@ -37,69 +43,38 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y ffmpeg gifsicle
 
-      - name: Render SVG motion frames
+      - name: Render founder motion frames
         run: node scripts/render_profile_motion.mjs
 
-      - name: Encode compact animated GIFs
+      - name: Encode mobile-friendly founder GIF
         run: |
-          ffmpeg -y -framerate 8 -i frames/frame-%03d.png \
-            -filter_complex "[0:v]fps=8,scale=864:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=64:stats_mode=diff[p];[s1][p]paletteuse=dither=bayer" \
-            -loop 0 /tmp/typography-motion-raw.gif
-          gifsicle --optimize=3 --lossy=45 /tmp/typography-motion-raw.gif \
-            -o assets/typography-motion.gif
-
-          ffmpeg -y -framerate 8 -i work-frames/frame-%03d.png \
-            -filter_complex "[0:v]fps=8,scale=864:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=64:stats_mode=diff[p];[s1][p]paletteuse=dither=bayer" \
-            -loop 0 /tmp/work-showcase-raw.gif
-          gifsicle --optimize=3 --lossy=45 /tmp/work-showcase-raw.gif \
-            -o assets/work-showcase.gif
-
           ffmpeg -y -framerate 8 -i founder-frames/frame-%03d.png \
             -filter_complex "[0:v]fps=8,scale=720:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=64:stats_mode=diff[p];[s1][p]paletteuse=dither=bayer" \
             -loop 0 /tmp/nextborder-founder-raw.gif
-          gifsicle --optimize=3 --lossy=75 /tmp/nextborder-founder-raw.gif \
+          gifsicle --optimize=3 --lossy=70 /tmp/nextborder-founder-raw.gif \
             -o assets/nextborder-founder-motion.gif
+          ls -lh assets/nextborder-founder-motion.gif
 
-          ls -lh assets/typography-motion.gif assets/work-showcase.gif assets/nextborder-founder-motion.gif
-
-      - name: Switch profile images to generated GIFs
+      - name: Switch founder image to generated GIF
         run: |
           python - <<'PY'
           from pathlib import Path
-
           readme = Path("README.md")
           content = readme.read_text()
-
-          replacements = [
-              (
-                  '<img src="assets/typography-motion.svg" alt="Animated typography: People. Pathways. Systems." width="100%"/>',
-                  '<img src="assets/typography-motion.gif" alt="Animated typography: People. Pathways. Systems." width="100%"/>'
-              ),
-              (
-                  '<img src="assets/work-showcase.svg" alt="Three selected work areas: NextBorder, NextBorder Import and Dawan Trade Link" width="100%"/>',
-                  '<img src="assets/work-showcase.gif" alt="Three selected work areas: NextBorder, NextBorder Import and Dawan Trade Link" width="100%"/>'
-              ),
-              (
-                  '<img src="assets/nextborder-founder-motion.svg" alt="Ishak Dawan, Founder and CEO of Next Border. Crossing Boundaries. Building Futures." width="100%"/>',
-                  '<img src="assets/nextborder-founder-motion.gif" alt="Ishak Dawan, Founder and CEO of Next Border. Crossing Boundaries. Building Futures." width="100%"/>'
-              )
-          ]
-
-          for source, rendered in replacements:
-              content = content.replace(source, rendered)
-
-          readme.write_text(content)
+          source = '<img src="assets/nextborder-founder-motion.svg" alt="Ishak Dawan, Founder and CEO of Next Border. Crossing Boundaries. Building Futures." width="100%"/>'
+          rendered = '<img src="assets/nextborder-founder-motion.gif" alt="Ishak Dawan, Founder and CEO of Next Border. Crossing Boundaries. Building Futures." width="100%"/>'
+          readme.write_text(content.replace(source, rendered))
           PY
 
-      - name: Publish animated profile assets
+      - name: Publish optimized founder animation
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/typography-motion.gif assets/work-showcase.gif assets/nextborder-founder-motion.gif README.md
+          git add assets/nextborder-founder-motion.gif README.md
           if git diff --cached --quiet; then
-            echo "The animated profile assets are already up to date."
+            echo "The founder animation is already up to date."
           else
-            git commit -m "Render and publish animated profile showcases"
+            git commit -m "Publish Next Border founder background animation"
             git fetch origin main
             git rebase origin/main
             git push origin HEAD:main
