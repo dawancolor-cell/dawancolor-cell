@@ -29,7 +29,7 @@ I work across technology, education, business and digital experiences. I enjoy t
 
 ### Selected work
 
-<img src="assets/work-showcase.svg" alt="Three selected work areas: NextBorder, NextBorder Import and Dawan Trade Link" width="100%"/>
+<img src="assets/work-showcase.gif" alt="Three selected work areas: NextBorder, NextBorder Import and Dawan Trade Link" width="100%"/>
 
 <table>
   <thead>
