@@ -70,6 +70,6 @@ As Founder & CEO of [Next Border](https://www.nextborder.online), I work on clea
 
 ### Design point of view
 
-A good digital experience should feel considered, not generated. I value strong typography, purposeful motion, restrained colour and clear information hierarchy.
+A good digital experience should feel considered, not generated. I value expressive colour, strong typography, purposeful motion and clear information hierarchy.
 
 <sub>Based in Bangladesh · Open to thoughtful collaborations</sub>
