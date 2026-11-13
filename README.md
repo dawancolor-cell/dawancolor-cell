@@ -39,6 +39,20 @@ A focused view of the work across education, operations and business.
 | **NextBorder Import** | Import operations dashboard and digital workflows | [Repository](https://github.com/dawancolor-cell/nextborder-import) |
 | **Dawan Trade Link** | Business and brand initiatives | Business focus |
 
+### Technology universe
+
+The tools and disciplines I’m exploring to connect thoughtful design with useful systems.
+
+<img src="assets/technology-universe.svg" alt="Technology interests: AI and automation, frontend and motion, cloud and infrastructure, education technology, and product and brand systems." width="100%"/>
+
+<sub>Areas of exploration, not proficiency ratings.</sub>
+
+### Founder journey
+
+A few chapters that shaped the way I work. This timeline is intentionally undated where exact milestones have not been confirmed.
+
+<img src="assets/founder-journey.svg" alt="Founder journey: technical learning, travel and service operations, student guidance, and building ventures." width="100%"/>
+
 ### Founder & CEO · Next Border
 
 <img src="assets/nextborder-founder-motion.gif" alt="Ishak Dawan, Founder and CEO of Next Border. Crossing Boundaries. Building Futures." width="100%"/>

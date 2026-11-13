@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" role="img" aria-labelledby="title desc">
+<title id="title">Ishak Dawan — founder journey</title>
+<desc id="desc">A four-stage professional journey: technical foundations, travel operations, student guidance, and building ventures. The timeline is deliberately undated because exact milestones have not been supplied for every stage.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07121C"/><stop offset=".62" stop-color="#0A2029"/><stop offset="1" stop-color="#082F34"/></linearGradient>
+ <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#13C5C2"/><stop offset=".52" stop-color="#D8C69A"/><stop offset="1" stop-color="#13C5C2"/></linearGradient>
+ <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#E8E6DD" opacity=".1"/></pattern>
+</defs>
+<rect width="1440" height="560" rx="22" fill="url(#bg)"/><rect width="1440" height="560" rx="22" fill="url(#dots)"/>
+<text x="64" y="62" fill="#D8C69A" font-family="Arial,sans-serif" font-size="13" letter-spacing="4">DAWAN  /  FOUNDER JOURNEY</text>
+<text x="1376" y="62" fill="#94A3B8" text-anchor="end" font-family="Arial,sans-serif" font-size="12" letter-spacing="3">A WORK IN PROGRESS</text>
+<text x="64" y="126" fill="#F5F3EA" font-family="Georgia,serif" font-size="50">Different chapters. One direction.</text>
+<text x="66" y="162" fill="#AEBCC2" font-family="Arial,sans-serif" font-size="17">A path shaped by technology, people, education and entrepreneurship.</text>
+<path d="M150 275H1290" stroke="#D8C69A" stroke-opacity=".2" stroke-width="5" stroke-linecap="round"/>
+<path d="M150 275H1290" stroke="url(#line)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="12 12"/>
+<g font-family="Arial,sans-serif">
+ <g transform="translate(150 275)"><circle r="16" fill="#0B2932" stroke="#D8C69A" stroke-width="2"/><circle r="5" fill="#13C5C2"/><path d="M0 -18V-54" stroke="#D8C69A" stroke-opacity=".7"/><text x="0" y="-78" fill="#D8C69A" text-anchor="middle" font-size="11" letter-spacing="2">FOUNDATION</text><text x="0" y="72" fill="#F5F3EA" text-anchor="middle" font-family="Georgia,serif" font-size="24">Technical learning</text><text x="0" y="100" fill="#AEBCC2" text-anchor="middle" font-size="14">Computer support studies</text><text x="0" y="122" fill="#AEBCC2" text-anchor="middle" font-size="14">ASA College · New York</text></g>
+ <g transform="translate(530 275)"><circle r="16" fill="#0B2932" stroke="#D8C69A" stroke-width="2"/><circle r="5" fill="#13C5C2"/><path d="M0 -18V-54" stroke="#D8C69A" stroke-opacity=".7"/><text x="0" y="-78" fill="#D8C69A" text-anchor="middle" font-size="11" letter-spacing="2">OPERATIONS</text><text x="0" y="72" fill="#F5F3EA" text-anchor="middle" font-family="Georgia,serif" font-size="24">Travel &amp; service</text><text x="0" y="100" fill="#AEBCC2" text-anchor="middle" font-size="14">Administrative experience</text><text x="0" y="122" fill="#AEBCC2" text-anchor="middle" font-size="14">Travel agency operations</text></g>
+ <g transform="translate(910 275)"><circle r="16" fill="#0B2932" stroke="#D8C69A" stroke-width="2"/><circle r="5" fill="#13C5C2"/><path d="M0 -18V-54" stroke="#D8C69A" stroke-opacity=".7"/><text x="0" y="-78" fill="#D8C69A" text-anchor="middle" font-size="11" letter-spacing="2">PEOPLE</text><text x="0" y="72" fill="#F5F3EA" text-anchor="middle" font-family="Georgia,serif" font-size="24">Student guidance</text><text x="0" y="100" fill="#AEBCC2" text-anchor="middle" font-size="14">Admissions &amp; visa support</text><text x="0" y="122" fill="#AEBCC2" text-anchor="middle" font-size="14">Student pathways</text></g>
+ <g transform="translate(1290 275)"><circle r="16" fill="#0B2932" stroke="#D8C69A" stroke-width="2"/><circle r="5" fill="#13C5C2"/><path d="M0 -18V-54" stroke="#D8C69A" stroke-opacity=".7"/><text x="0" y="-78" fill="#D8C69A" text-anchor="middle" font-size="11" letter-spacing="2">BUILDING</text><text x="0" y="72" fill="#F5F3EA" text-anchor="middle" font-family="Georgia,serif" font-size="24">Founder &amp; ventures</text><text x="0" y="100" fill="#AEBCC2" text-anchor="middle" font-size="14">Next Border · Dawan Trade Link</text><text x="0" y="122" fill="#AEBCC2" text-anchor="middle" font-size="14">Ideas into useful systems</text></g>
+</g>
+<path d="M64 486H1376" stroke="#E8E6DD" stroke-opacity=".16"/>
+<text x="64" y="520" fill="#D8C69A" font-family="Arial,sans-serif" font-size="12" letter-spacing="2">LEARN  →  SERVE  →  BUILD</text>
+<text x="1376" y="520" fill="#94A3B8" font-family="Arial,sans-serif" font-size="12" text-anchor="end" letter-spacing="2">THE NEXT CHAPTER IS BEING WRITTEN</text>
+</svg>

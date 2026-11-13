@@ -18,11 +18,17 @@ The visual language prioritizes editorial typography, generous negative space, p
 - `assets/portrait-original.jpg` — original founder portrait; preserved unchanged.
 - `assets/typography-motion.svg` and `assets/typography-motion.gif` — DAWAN kinetic typography banner.
 - `assets/work-showcase.svg` and `assets/work-showcase.gif` — selected ventures: NextBorder, NextBorder Import and Dawan Trade Link.
+- `assets/technology-universe.svg` — static editorial map of technology interests and tools.
+- `assets/founder-journey.svg` — undated founder journey based on known professional chapters.
 - `assets/nextborder-founder-motion.svg` and `assets/nextborder-founder-motion.gif` — Next Border founder identity panel.
 
-## Selected ventures content rules
+## Content accuracy
 
-Only projects and business initiatives supported by verified repository or website information are presented. NextBorder and NextBorder Import link to their existing public repositories; Dawan Trade Link is identified as a business initiative without inventing a public repository URL.
+Technology labels describe areas of exploration, not verified proficiency levels. No skill bars, rankings or invented metrics are used.
+
+The founder journey is deliberately undated. It presents broad professional chapters without assigning unverified years or overstating credentials.
+
+Selected venture links are limited to known public destinations. Dawan Trade Link is identified as a business initiative without inventing a public repository URL.
 
 ## Brand relationship
 
@@ -30,7 +36,7 @@ DAWAN is the master personal identity. The Next Border founder panel remains a d
 
 ## Rendering
 
-SVG files are the editable motion sources. GitHub Actions renders the DAWAN typography, selected ventures and Next Border founder panels as optimized GIFs at 8 fps for README compatibility. The renderer uses a pinned Playwright version and publishes generated assets to the branch that triggered the workflow.
+The SVG diagrams are self-contained vector images. The DAWAN typography, selected ventures and Next Border founder panels are rendered as optimized GIFs at 8 fps for README compatibility. The renderer uses a pinned Playwright version and publishes generated assets to the branch that triggered the workflow.
 
 ## GitHub platform boundary
 
