@@ -2,7 +2,7 @@
 
 <img src="assets/wordmark.svg" alt="DAWAN" width="100%"/>
 
-<img src="assets/typography-motion.svg" alt="Animated typography: People. Pathways. Systems." width="100%"/>
+<img src="assets/typography-motion.gif" alt="Animated typography: People. Pathways. Systems." width="100%"/>
 
 *Founder-minded builder · Technology · Education · Digital experiences*
 
