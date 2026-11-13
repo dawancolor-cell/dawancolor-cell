@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 530" role="img" aria-labelledby="title desc">
 <title id="title">DAWAN — Selected ventures</title>
-<desc id="desc">Three restrained editorial cards for NextBorder, NextBorder Import and Dawan Trade Link, using midnight navy, petrol teal, warm ivory and champagne gold with subtle motion lines and original abstract vector illustrations.</desc>
+<desc id="desc">Three restrained editorial cards for Next Border, NextBorder Import and Dawan Trade Link, using midnight navy, petrol teal, warm ivory and champagne gold with subtle motion lines and original abstract vector illustrations.</desc>
 <defs>
   <linearGradient id="canvas" x1="0" y1="0" x2="1" y2="1">
     <stop offset="0" stop-color="#07121C"/>
@@ -45,12 +45,12 @@
   <animate attributeName="x2" values="220;440;220" dur="12s" repeatCount="indefinite"/>
 </path>
 
-<!-- Card 01: NextBorder -->
+<!-- Card 01: Next Border -->
 <g>
   <rect x="54" y="218" width="424" height="250" rx="15" fill="#0B202A" stroke="#1E5960" stroke-width="1.2"/>
   <rect x="54" y="218" width="424" height="3" rx="1.5" fill="url(#teal)"/>
   <text x="82" y="256" fill="#13C5C2" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="2.5">01  /  EDUCATION &amp; MOBILITY</text>
-  <text x="82" y="305" fill="#F5F3EA" font-family="Georgia, 'Times New Roman', serif" font-size="39">NextBorder</text>
+  <text x="82" y="305" fill="#F5F3EA" font-family="Georgia, 'Times New Roman', serif" font-size="39">Next Border</text>
   <text x="82" y="340" fill="#C5D0D2" font-family="Arial, Helvetica, sans-serif" font-size="16">Student pathways, admissions guidance</text>
   <text x="82" y="364" fill="#C5D0D2" font-family="Arial, Helvetica, sans-serif" font-size="16">and international mobility support.</text>
   <g transform="translate(355 338)">
