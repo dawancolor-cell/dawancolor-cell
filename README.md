@@ -6,6 +6,12 @@
 
 *Founder-minded builder · Technology · Education · Digital experiences*
 
+<br/>
+
+<img src="assets/portrait-original.jpg" alt="Ishak Dawan in a cream three-piece suit" width="360"/>
+
+<sub>ISHАK DAWAN · BANGLADESH</sub>
+
 </div>
 
 ---
