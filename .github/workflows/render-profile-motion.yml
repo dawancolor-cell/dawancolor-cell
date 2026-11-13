@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "assets/typography-motion.svg"
+      - "assets/work-showcase.svg"
       - "scripts/render_profile_motion.mjs"
       - ".github/workflows/render-profile-motion.yml"
   workflow_dispatch:
@@ -41,35 +42,55 @@ jobs:
       - name: Render SVG motion frames
         run: node scripts/render_profile_motion.mjs
 
-      - name: Encode compact animated GIF
+      - name: Encode compact animated GIFs
         run: |
           ffmpeg -y -framerate 8 -i frames/frame-%03d.png \
             -filter_complex "[0:v]fps=8,scale=864:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=64:stats_mode=diff[p];[s1][p]paletteuse=dither=bayer" \
             -loop 0 /tmp/typography-motion-raw.gif
           gifsicle --optimize=3 --lossy=45 /tmp/typography-motion-raw.gif \
             -o assets/typography-motion.gif
-          ls -lh assets/typography-motion.gif
 
-      - name: Switch profile banner to generated GIF
+          ffmpeg -y -framerate 8 -i work-frames/frame-%03d.png \
+            -filter_complex "[0:v]fps=8,scale=864:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=64:stats_mode=diff[p];[s1][p]paletteuse=dither=bayer" \
+            -loop 0 /tmp/work-showcase-raw.gif
+          gifsicle --optimize=3 --lossy=45 /tmp/work-showcase-raw.gif \
+            -o assets/work-showcase.gif
+
+          ls -lh assets/typography-motion.gif assets/work-showcase.gif
+
+      - name: Switch profile images to generated GIFs
         run: |
           python - <<'PY'
           from pathlib import Path
+
           readme = Path("README.md")
           content = readme.read_text()
-          svg = '<img src="assets/typography-motion.svg" alt="Animated typography: People. Pathways. Systems." width="100%"/>'
-          gif = '<img src="assets/typography-motion.gif" alt="Animated typography: People. Pathways. Systems." width="100%"/>'
-          if svg in content:
-              readme.write_text(content.replace(svg, gif))
+
+          replacements = [
+              (
+                  '<img src="assets/typography-motion.svg" alt="Animated typography: People. Pathways. Systems." width="100%"/>',
+                  '<img src="assets/typography-motion.gif" alt="Animated typography: People. Pathways. Systems." width="100%"/>'
+              ),
+              (
+                  '<img src="assets/work-showcase.svg" alt="Three selected work areas: NextBorder, NextBorder Import and Dawan Trade Link" width="100%"/>',
+                  '<img src="assets/work-showcase.gif" alt="Three selected work areas: NextBorder, NextBorder Import and Dawan Trade Link" width="100%"/>'
+              )
+          ]
+
+          for source, rendered in replacements:
+              content = content.replace(source, rendered)
+
+          readme.write_text(content)
           PY
 
-      - name: Publish animated banner asset
+      - name: Publish animated profile assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/typography-motion.gif README.md
+          git add assets/typography-motion.gif assets/work-showcase.gif README.md
           if git diff --cached --quiet; then
-            echo "The animated banner is already up to date."
+            echo "The animated profile assets are already up to date."
           else
-            git commit -m "Build and publish compact animated profile banner"
+            git commit -m "Render and publish animated profile showcases"
             git push
           fi
