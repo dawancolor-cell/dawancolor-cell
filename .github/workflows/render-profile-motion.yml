@@ -1,0 +1,61 @@
+name: Render DAWAN profile motion
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "assets/typography-motion.svg"
+      - "scripts/render_profile_motion.mjs"
+      - ".github/workflows/render-profile-motion.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render-banner:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install browser renderer
+        run: |
+          npm init -y
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+
+      - name: Install GIF encoder
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Render SVG motion frames
+        run: node scripts/render_profile_motion.mjs
+
+      - name: Encode optimized animated GIF
+        run: |
+          ffmpeg -y -framerate 10 -i frames/frame-%03d.png \
+            -filter_complex "[0:v]fps=10,scale=960:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=96:stats_mode=diff[p];[s1][p]paletteuse=dither=bayer" \
+            -loop 0 assets/typography-motion.gif
+          ls -lh assets/typography-motion.gif
+
+      - name: Publish animated banner asset
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/typography-motion.gif
+          if git diff --cached --quiet; then
+            echo "The animated banner is already up to date."
+          else
+            git commit -m "Build animated profile banner GIF"
+            git push
+          fi
