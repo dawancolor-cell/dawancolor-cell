@@ -48,14 +48,26 @@ jobs:
             -loop 0 assets/typography-motion.gif
           ls -lh assets/typography-motion.gif
 
+      - name: Switch profile banner to generated GIF
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          readme = Path("README.md")
+          content = readme.read_text()
+          svg = '<img src="assets/typography-motion.svg" alt="Animated typography: People. Pathways. Systems." width="100%"/>'
+          gif = '<img src="assets/typography-motion.gif" alt="Animated typography: People. Pathways. Systems." width="100%"/>'
+          if svg in content:
+              readme.write_text(content.replace(svg, gif))
+          PY
+
       - name: Publish animated banner asset
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/typography-motion.gif
+          git add assets/typography-motion.gif README.md
           if git diff --cached --quiet; then
             echo "The animated banner is already up to date."
           else
-            git commit -m "Build animated profile banner GIF"
+            git commit -m "Build and publish animated profile banner GIF"
             git push
           fi
