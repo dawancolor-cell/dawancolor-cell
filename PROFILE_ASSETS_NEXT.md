@@ -20,6 +20,7 @@ The visual language prioritizes editorial typography, generous negative space, p
 - `assets/work-showcase.svg` and `assets/work-showcase.gif` — selected ventures: NextBorder, NextBorder Import and Dawan Trade Link.
 - `assets/technology-universe.svg` — static editorial map of technology interests and tools.
 - `assets/founder-journey.svg` — undated founder journey based on known professional chapters.
+- `assets/activity-collaboration-contact.svg` — static editorial panel introducing GitHub activity, collaboration themes and contact paths.
 - `assets/nextborder-founder-motion.svg` and `assets/nextborder-founder-motion.gif` — Next Border founder identity panel.
 
 ## Content accuracy
@@ -29,6 +30,12 @@ Technology labels describe areas of exploration, not verified proficiency levels
 The founder journey is deliberately undated. It presents broad professional chapters without assigning unverified years or overstating credentials.
 
 Selected venture links are limited to known public destinations. Dawan Trade Link is identified as a business initiative without inventing a public repository URL.
+
+The Activity section points to GitHub's native profile overview and repository views. It does not recreate contribution totals, fabricate activity data or imply that decorative artwork is a live data visualization.
+
+Collaboration themes are framed as areas of interest, not claims of professional mastery or guaranteed service delivery.
+
+Contact paths are limited to verified public destinations: the GitHub profile, NextBorder website and its published consultation page. No personal or business email address is added without confirmation that it is intended for public display.
 
 ## Brand relationship
 
@@ -42,4 +49,4 @@ The SVG diagrams are self-contained vector images. The DAWAN typography, selecte
 
 GitHub Profile README does not provide a normal custom website runtime. Arbitrary page-level CSS, JavaScript, WebGL and scroll-controlled animation are not available. The profile uses supported Markdown, HTML fragments and self-contained image assets instead.
 
-The native GitHub contribution graph and activity timeline are controlled by GitHub and cannot be restyled by the README.
+The native GitHub contribution graph and activity timeline are controlled by GitHub and cannot be restyled by the README. The profile therefore links directly to GitHub's native activity view rather than presenting invented statistics.
