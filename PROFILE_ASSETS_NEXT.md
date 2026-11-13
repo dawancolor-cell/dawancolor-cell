@@ -3,13 +3,13 @@
 ## Published assets
 - `assets/wordmark.svg` — custom DAWAN wordmark.
 - `assets/portrait-original.jpg` — original portrait, unchanged.
-- `assets/typography-motion.svg` — animated typography composition embedded in the profile README.
+- `assets/typography-motion.svg` and `assets/typography-motion.gif` — kinetic typography banner.
+- `assets/work-showcase.svg` and `assets/work-showcase.gif` — animated three-card selected-work showcase.
 
 ## Motion details
-- Staggered reveals for People / Pathways / Systems.
-- Moving light sweep and animated route stroke.
-- Orbiting connection points, subtle particles, and an animated grid/glow field.
-- Static typography remains in the SVG as a visual fallback if a viewer does not animate SVG.
+- Typography banner: staggered word reveals, moving light sweep, animated route stroke, orbiting connection points, subtle particles and a quiet grid/glow field.
+- Work showcase: a traveling route signal for NextBorder, animated workflow bars for NextBorder Import, and an orbiting brand mark for Dawan Trade Link.
+- Both GIFs are rendered from editable SVG source files by GitHub Actions, then optimized for profile loading.
 
 ## Platform note
-GitHub Profile README supports image assets, not custom JavaScript, WebGL, or interactive 3D scenes. The SVG uses native vector animation so it remains self-contained and does not need a paid service or external runtime.
+GitHub Profile README supports formatted text, images and GIFs, but does not allow custom JavaScript, WebGL or arbitrary page-level CSS in the profile itself. The motion graphics are therefore self-contained visual assets rather than interactive website components.
