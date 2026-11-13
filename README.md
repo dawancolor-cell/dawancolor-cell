@@ -29,10 +29,34 @@ I work across technology, education, business and digital experiences. I enjoy t
 
 ### Selected work
 
-| Project | Focus |
-|---|---|
-| **NextBorder** | Education and visa consultancy experience |
-| **Dawan Trade Link** | Business and brand initiatives |
+<img src="assets/work-showcase.svg" alt="Three selected work areas: NextBorder, NextBorder Import and Dawan Trade Link" width="100%"/>
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Project</th>
+      <th align="left">Focus</th>
+      <th align="left">Explore</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>NextBorder</strong></td>
+      <td>Education and visa consultancy experience</td>
+      <td><a href="https://github.com/dawancolor-cell/next-border">Open repository ↗</a></td>
+    </tr>
+    <tr>
+      <td><strong>NextBorder Import</strong></td>
+      <td>Import operations dashboard and digital workflows</td>
+      <td><a href="https://github.com/dawancolor-cell/nextborder-import">Open repository ↗</a></td>
+    </tr>
+    <tr>
+      <td><strong>Dawan Trade Link</strong></td>
+      <td>Business and brand initiatives</td>
+      <td>Business focus</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Design point of view
 
