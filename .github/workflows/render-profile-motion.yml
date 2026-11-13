@@ -1,13 +1,6 @@
 name: Render DAWAN profile motion
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "assets/typography-motion.svg"
-      - "assets/work-showcase.svg"
-      - "scripts/render_profile_motion.mjs"
-      - ".github/workflows/render-profile-motion.yml"
   workflow_dispatch:
 
 permissions:
